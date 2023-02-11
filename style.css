@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgb(30, 2, 54);
+}
+/* navbar */
+nav{
+    /* background-color: rgb(1, 1, 52); */
+    background-color: rgb(30, 2, 54);
+}
+.hamburger{
+    display: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 20px;
+    padding: 8px 10px;
+    align-items: center;
+}
+.home-nav{
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    /* padding: 3px 3px; */
+}
+
+/* home section  */
+.home-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.left-sec img{
+    width: 18px;
+}
+.left-sec h4{
+    display: inline-block;
+}
+.left-sec :nth-child(4){
+    color: rgb(242, 255, 0);
+    font-size: 15px;
+}
+.right-sec img{
+    width: 300px;
+}
+
+/* project section  */
+.project-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.line{
+    background-color: blue;
+    width: 85px;
+    height: 6px;
+    border-radius: 8px;
+}
+.project-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+    gap: 10px;
+    margin-top: 10px;
+}
+.project-images img{
+    width:200px;
+}
+.project-images p{
+    text-align: center;
+}
+
+/* contact section  */
+.contact-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.contact-sec :nth-child(2){
+    width: 120px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+.social-media img{
+    width: 20px;
+}
+.social-media :nth-child(2){
+    width: 20px;
+}
+.social-media :last-child{
+    width: 30px;
+}
+
+/* media query */
+@media screen and (max-width:425px) {
+    /* nav bar  */
+    ul{
+        display: none;
+    }
+    nav{
+        background-color: rgb(30, 2, 54);
+    }
+    .hamburger{
+        display: block;
+        padding: 10px 20px;
+    }
+    .hamburger img{
+        width: 20px;
+    }
+
+    /* home section  */
+    .home-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-sec{
+        text-align: center;
+    }
+    .left-sec h4{
+        display: block;
+    }
+    .left-sec :nth-child(4){
+        font-size: 22px;
+    }
+    .right-sec img{
+        width: 200px;
+    }
+
+    /* project section  */
+    .project-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .project-images{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .project-images img{
+        width:180px;
+    }
+    .project-images p{
+        text-align: center;
+    }
+}
